@@ -1,0 +1,48 @@
+<!-- src/app/sidebar/sidebar.component.html -->
+<aside class="bg-gray-800 text-white h-screen w-64 fixed overflow-y-auto">
+    <div class="p-4">
+      <!-- Replace 'path-to-your-photo' with the actual path to your photo -->
+      <img src="./../../../assets/img/benish.jpg" alt="" class="w-16 h-16 mx-auto mb-4 rounded-full">
+      <h1 class="text-xl font-bold text-center">Benish</h1>
+      <!-- <p class="text-center">I'm <span class="typed" data-typed-items="Designer, Front Developer, Backend Developer Freelancer,"></span></p> -->
+      <div class="social-links mt-3 text-center">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+ 
+    <aside id="default-sidebar" class="fixed  left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+           <ul class="space-y-2 font-medium" >
+              <li  >
+                 <a [routerLink]="'/home'" routerLinkActive="active" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <i class="bx bx-home"></i>
+                    <span class="ms-3">Home</span>
+                 </a>
+              </li>
+              <li>
+                 <a [routerLink]="'/about'" routerLinkActive="active" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <i class="bx bx-user"></i> 
+                    <span class="flex-1 ms-3 whitespace-nowrap">About</span>
+                 </a>
+                 <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <i class="bx bx-file-blank"></i> 
+                    <span class="flex-1 ms-3 whitespace-nowrap">Resume</span>
+                 </a>
+                 <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                    <i class="bx bx-envelope"></i>
+                    <span class="flex-1 ms-3 whitespace-nowrap">Contact</span>
+                 </a>
+              </li>
+             
+           </ul>
+        </div>
+     </aside>
+  </aside>
+  <div class="p-4 sm:ml-64">
+    <router-outlet></router-outlet>
+  </div>
+  

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* your-component.component.css */
+@import 'https://cdn.jsdelivr.net/npm/typed.js@2.0.12';
+
+
+/* Your additional styles... */

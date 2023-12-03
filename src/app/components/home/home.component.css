@@ -1,0 +1,12 @@
+.img{
+    background-image: url("https://wallpapercave.com/wp/wp9641838.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+}
+
+.typed{
+    text-decoration: underline;
+    color:red;
+    font-size: large;
+}
